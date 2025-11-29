@@ -1,0 +1,22 @@
+{
+  "name": "PG Official",
+  "short_name": "PG Official",
+  "description": "Personal blog and portfolio of Pratik Giri",
+  "icons": [
+    {
+      "src": "/demonn.jpg",
+      "sizes": "any",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#667eea",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}
+
