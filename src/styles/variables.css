@@ -1,0 +1,41 @@
+/* CSS Variables for Dark Mode */
+:root {
+    --bg-primary: #f0f2f5;
+    --bg-secondary: #ffffff;
+    --text-primary: #1c1e21;
+    --text-secondary: #65676b;
+    --border-color: #e4e6eb;
+    --shadow-color: rgba(0,0,0,0.1);
+    --card-bg: #ffffff;
+    --sidebar-bg: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 40%, #dbeafe 80%, #f3e8ff 100%);
+}
+
+[data-theme="dark"] {
+    --bg-primary: linear-gradient(180deg, #232946 0%, #121629 100%);
+    --bg-secondary: linear-gradient(180deg, #232946 0%, #121629 100%);
+    --text-primary: #e4e6eb;
+    --text-secondary: #b0b3b8;
+    --border-color: #3e4042;
+    --shadow-color: rgba(0,0,0,0.3);
+    --card-bg: linear-gradient(180deg, #232946 0%, #121629 100%);
+    --sidebar-bg: linear-gradient(180deg, #232946 0%, #121629 100%);
+}
+
+[data-theme="dark"] .profile-wrapper {
+    background: linear-gradient(135deg, #232946 0%, #121629 100%);
+}
+
+/* Dark mode styles for scroll-to-top button */
+[data-theme="dark"] #back-to-top {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="dark"] #back-to-top:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.6);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+

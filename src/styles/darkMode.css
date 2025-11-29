@@ -1,0 +1,105 @@
+/* Dark mode styles for search */
+[data-theme="dark"] #search {
+    background-color: #f3ecec;
+}
+
+[data-theme="dark"] .search-input-wrapper {
+    background-color: #262626;
+}
+
+[data-theme="dark"] .search-input {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .search-input::placeholder {
+    color: #8e8e93;
+}
+
+[data-theme="dark"] .search-icon {
+    color: #8e8e93;
+}
+
+[data-theme="dark"] .search-input-wrapper:focus-within {
+    background-color: #000000;
+    box-shadow: 0 0 0 1px #404040;
+}
+
+[data-theme="dark"] .search-dropdown {
+    background: #000000;
+    border-color: #404040;
+}
+
+[data-theme="dark"] .search-section {
+    border-bottom-color: #404040;
+}
+
+[data-theme="dark"] .search-item:hover {
+    background-color: #262626;
+}
+
+[data-theme="dark"] .search-item-name {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .search-item-type {
+    color: #8e8e93;
+}
+
+[data-theme="dark"] .search-clear-btn:hover,
+[data-theme="dark"] .search-item-remove:hover {
+    background-color: #404040;
+    color: #ffffff;
+}
+
+[data-theme="dark"] #sidebar,
+[data-theme="dark"] .profile-wrapper,
+[data-theme="dark"] .sidebar-bottom {
+    color: #fff;
+}
+
+[data-theme="dark"] .nav-link,
+[data-theme="dark"] .nav-link i,
+[data-theme="dark"] .nav-link span,
+[data-theme="dark"] .site-title,
+[data-theme="dark"] .site-subtitle,
+[data-theme="dark"] .sidebar-bottom a {
+    color: #fff !important;
+}
+
+[data-theme="dark"] .nav-link.active,
+[data-theme="dark"] .nav-link:hover {
+    background: rgba(255,255,255,0.08);
+    color: #fff !important;
+    border-left-color: #fff;
+}
+
+[data-theme="dark"] .sidebar-bottom a:hover {
+    color: #232946;
+    background: #fff;
+}
+
+[data-theme="dark"] .sidebar-bottom a[aria-label="instgram"]:hover {
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-color: transparent;
+    color: #fff;
+}
+
+[data-theme="dark"] .sidebar-bottom a[aria-label="github"]:hover {
+    background: #333;
+    border-color: transparent;
+    color: #fff;
+}
+
+[data-theme="dark"] .sidebar-bottom a[aria-label="email"]:hover {
+    background: linear-gradient(135deg, #ea4335 0%, #ff6b6b 100%);
+    border-color: transparent;
+    color: #fff;
+}
+
+[data-theme="dark"] .sidebar-bottom a[aria-label="facebook"]:hover {
+    background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+    border-color: transparent;
+    color: #fff;
+}
+
+

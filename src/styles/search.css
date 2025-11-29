@@ -1,0 +1,227 @@
+/* Search bar */
+#search {
+    display: flex;
+    align-items: center;
+    background-color: #efefef;
+    border: none;
+    margin-left: 650px;
+    border-radius: 10px;
+    position: relative;
+    min-width: 280px;
+    max-width: 400px;
+    transition: all 0.2s ease;
+    flex: 1;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+}
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 8px;
+    padding: 7px 12px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.search-icon {
+    color: #8e8e93;
+    margin-right: 8px;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    background: transparent;
+    font-size: 14px;
+    color: #262626;
+    font-weight: 400;
+}
+
+.search-input::placeholder {
+    color: #8e8e93;
+    font-weight: 400;
+}
+
+.search-clear-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #8e8e93;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    margin-left: 8px;
+    transition: all 0.2s ease;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-clear-btn:hover {
+    background-color: #dbdbdb;
+    color: #262626;
+}
+
+.search-clear-btn.show {
+    display: none;
+}
+
+.search-cancel-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #0095f6;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.search-cancel-btn:hover {
+    background-color: #f0f8ff;
+}
+
+.search-cancel-btn.show {
+    display: none;
+}
+
+/* Search Dropdown - Instagram Style */
+.search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-top: 4px;
+    z-index: 1000;
+    display: none;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #dbdbdb;
+}
+
+.search-dropdown.show {
+    display: block;
+}
+
+.search-section {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.search-section:last-child {
+    border-bottom: none;
+}
+
+.search-section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8e8e93;
+    padding: 0 16px 8px;
+    margin: 0;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    position: relative;
+}
+
+.search-item:hover {
+    background-color: #fafafa;
+}
+
+.search-item-img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+    border: 1px solid #dbdbdb;
+}
+
+/* Text-only search items (no images) */
+.search-item-text-only .search-item-info {
+    width: 100%;
+    padding-left: 0;
+}
+
+.search-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.search-item-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-item-type {
+    font-size: 14px;
+    color: #8e8e93;
+    font-weight: 400;
+}
+
+.search-item-remove {
+    background: none;
+    border: none;
+    color: #8e8e93;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.2s ease;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-item:hover .search-item-remove {
+    opacity: 1;
+}
+
+.search-item-remove:hover {
+    background-color: #dbdbdb;
+    color: #262626;
+}
+
+/* Search focus states - Instagram Style */
+.search-input-wrapper:focus-within {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 1px #dbdbdb;
+}
+
+.search-input-wrapper:focus-within .search-icon {
+    color: #262626;
+}
+
+

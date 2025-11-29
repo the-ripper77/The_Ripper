@@ -1,0 +1,137 @@
+/* Topbar */
+#topbar {
+    position: sticky;
+    top: -100px; /* Start hidden above */
+    left: 0;
+    right: 0;
+    background-color: var(--card-bg);
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    gap: 12px;
+}
+
+#topbar.show {
+  top: 0;
+}
+
+body.dark-mode #topbar {
+    background: #1a1a1a;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.header-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+    max-width: none;
+    margin-top: 0;
+}
+
+/* Logo Styling */
+#topbar-title {
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    margin: 5px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px var(--shadow-color);
+    letter-spacing: -0.5px;
+    position: relative;
+    padding: 6px 0;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+#topbar-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#topbar-title:hover::before {
+    transform: scaleX(1);
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(102, 126, 234, 0.3);
+    flex-shrink: 0;
+    padding: 20px;
+    margin: 10 50;
+}
+
+.dark-mode-toggle-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.dark-mode-toggle-btn i {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle-btn:hover i {
+    transform: rotate(180deg);
+}
+
+/* Dark mode icon change */
+[data-theme="dark"] .dark-mode-toggle-btn i {
+    transform: rotate(180deg);
+}
+
+/* Hamburger Menu Button */
+#sidebar-trigger {
+    background: none;
+    border: none;
+    color: #2d3436;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: none; /* Hidden by default on desktop */
+}
+
+#sidebar-trigger:hover {
+    background-color: #f0f2f5;
+}
+
+
